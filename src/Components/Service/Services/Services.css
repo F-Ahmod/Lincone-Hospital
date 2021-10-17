@@ -1,0 +1,24 @@
+.services img{
+    max-width: 100%;
+}
+.services{ 
+    overflow: hidden;
+    background-color:whitesmoke;
+    border-radius: 2px;
+    width: 300px;
+}
+.services:hover{
+    box-shadow: 0 .5rem 1rem rgb(190, 189, 189);
+    border-radius: 10px;
+    transition: 0.2s;
+    }
+    .services:hover .photo{
+        transform: scale(1.1);
+
+    }
+    .service-img{
+        overflow: hidden;
+    }
+
+
+   

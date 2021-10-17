@@ -1,0 +1,53 @@
+[
+
+    {
+        "id": "1",
+        "img": "https://i.ibb.co/9Hv9NCQ/images-26.jpg",
+        "specialty": "Pediatric Infectious Diseases, Pediatric General.",
+        "education":"Fellowship: Montefiore Hospital, Pediatric Infectious Diseases, 1997 ",
+        "name":"Jacobo Abadi, MD"
+        
+      },
+    {
+        "id": "2",
+        "img": "https://i.ibb.co/wNfRfrc/images-25.jpg",
+        "specialty": "Pathology Anatomic, Pathology Cytopathology, Pathology Anatomic & Clinical.",
+        "education":"Residency: Jacobi Medical Center-Master, Pathology Anatomic & Clinical, 1996 ",
+        "name":"Maria A. Abadi."
+        
+      },
+    {
+        "id": "3",
+        "img": "https://i.ibb.co/CPF6tBk/images-24.jpg",
+        "specialty": "Nephrology, Internal Medicine.",
+        "education":"Residency: Brookdale Hospital Medical Center, Internal Medicine, 1995.",
+        "name":"Theophine, MD"
+        
+      },
+    {
+        "id": "4",
+        "img": "https://i.ibb.co/dtTnh2b/images-23.jpg",
+        "specialty": "Nurse Practitioner.",
+        "education":"Medical Education: Hunter College, Nursing, 2015.",
+        "name":"Alaxi Abayomi"
+        
+      },
+    {
+        "id": "5",
+        "img": "https://i.ibb.co/3f558T4/images-21.jpg",
+        "specialty": "Physician Assistant, Emergency Medicine.",
+        "education":"Medical Education: St. John's University, 2014.",
+        "name":"Mariam Abdelghany, PA"
+        
+      },
+    {
+        "id": "6",
+        "img": "https://i.ibb.co/R2fqWY1/images-20.jpg",
+        "specialty": "Psychiatry, Psychiatry Child and Adolescent, Neurology.",
+        "education":"Graduate School: Eastern Virginia Medical School.",
+        "name":"Nancy Hussein "
+        
+      }
+    
+    
+]
