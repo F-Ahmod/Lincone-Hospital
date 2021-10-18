@@ -10,13 +10,18 @@ const Service = () => {
             .then(data => setService(data));
     }, [])
     return (
-        <div className="container">
+        <div>
+            <h2 className="text-center fw-blod">Our Services</h2>
+            <hr />
+            <div className="container ">
+            {/* d-flex flex-wrap */}
                 {
                     service.map(service => <Services
                         key={service.id}
                         service={service}
                     ></Services>)
                 }
+        </div>
         </div>
     );
 };

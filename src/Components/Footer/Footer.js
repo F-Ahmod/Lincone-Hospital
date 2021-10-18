@@ -10,10 +10,7 @@ const Footer = () => {
                     About NYC Health + Hospitals
                     Our Mission & Values Leadership
                     Transformation Awards
-                    Diversity is Our Specialty
-                    Publications & Reports
-                    Public Meetings & Notices
-                    Policies & Procedures</p>
+                    </p>
 
             </div>
             <div className="col-md-3 mt-3">
@@ -33,18 +30,16 @@ const Footer = () => {
                 <p>Arts in Medicine
                    Health Home – Care Coordination Program
                    Leadership in Health Care Reform
-                   Modern Facilities
-                   Centers of Excellence
-                   Simulation Center
-                   Institute for Diseases and Disaster Managemen</p>
+                Disaster Managemen</p>
 
             </div>
             <div className="col-md-3 mt-3">
-                <h4>NEWS</h4>
-                <p>Press Releases
-                  In the News 
-                  <br />
-                  Social Media</p>
+                <h4>Follow Us</h4>
+                <h6 ><i class="fab fa-facebook-square text-primary fs-2"></i><a href="">Facbook</a></h6>
+                <h6 ><i class="fab fa-youtube-square text-danger fs-2"></i><a href="">YouTube</a></h6>
+                <h6 ><i class="fab fa-instagram-square fs-2"></i><a href="">instagram</a></h6>
+                
+                <h6 ><i class="fab fa-snapchat fs-2 text-warning"></i><a href="">Snapchat</a></h6>
 
             </div>
             

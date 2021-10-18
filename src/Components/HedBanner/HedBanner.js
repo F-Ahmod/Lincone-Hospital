@@ -18,8 +18,8 @@ const HedBanner = () => {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h2 className="text-secondary">Patiant Careing</h2>
+     
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -31,8 +31,8 @@ const HedBanner = () => {
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h2 className="text-secondary">Doctor with lovely patiant</h2>
+     
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -44,8 +44,8 @@ const HedBanner = () => {
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h2 className="text-secondary" >Family Planing</h2>
+     
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

@@ -1,0 +1,11 @@
+.about{
+    /* background-image: url("../images/about2.jpg");
+    background-size:contain;
+    background-repeat: no-repet;
+   
+    color:black; */
+    background-image: url('../images//about.jpg');
+  background-repeat: no-repeat;
+  background-size: fixed;
+  background-position: center; 
+}

@@ -9,40 +9,60 @@ import Home from './Components/Home/Home';
 import Service from './Components/Service/Service';
 import FindDoctor from './Components/FindDoctor/FindDoctor';
 import VisitorPolicy from './Components/VisitorPolicy/VisitorPolicy';
+import Login from './Components/Login/Login';
+
+import SingUp from './Components/SingUp/Singup';
+import AboutUs from './Components/AboutUs/AboutUs';
+import PrivetRoute from './Components/PrivetRoute/PrivetRoute';
 
 
 function App() {
   return (
-    <BrowserRouter>
+    
+      <BrowserRouter>
     <Header></Header>
     <HedBanner></HedBanner>
     <Switch>
       <Route exact path="/">
       <Service></Service>
+      <FindDoctor></FindDoctor>
+      
         <Home></Home>
 
       </Route>
       <Route exact path="/home">
       <Service></Service>
+      <FindDoctor></FindDoctor>
+      <AboutUs></AboutUs>
         <Home></Home>
 
       </Route>
       <Route  path="/service">
         <Service></Service>
-
       </Route>
+
       <Route  path="/finddoctor">
        <FindDoctor></FindDoctor>
-
       </Route>
-      <Route  path="/visitorPolicy">
-       <VisitorPolicy></VisitorPolicy>
 
+      <PrivetRoute  path="/visitorPolicy">
+       <VisitorPolicy></VisitorPolicy>
+      </PrivetRoute>
+      <Route exact path="/aboutus">
+      <AboutUs></AboutUs>
+      </Route>
+
+      <Route exact path="/login">
+       <Login></Login>
+      </Route>
+      <Route  path="/singup">
+       <SingUp></SingUp>
       </Route>
 
     </Switch>
     <Footer></Footer>
     </BrowserRouter>
+   
   );
 }
 
