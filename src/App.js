@@ -54,6 +54,9 @@ function App() {
         <DoctorDetails></DoctorDetails>
       </Route>
 
+      <Route  path="/covid">
+      <Covid></Covid>
+      </Route>
       <Route  path="/finddoctor">
        <FindDoctor></FindDoctor>
       </Route>

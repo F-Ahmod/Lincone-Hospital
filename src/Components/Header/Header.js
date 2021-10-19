@@ -35,7 +35,9 @@ const Header = () => {
       <div className="navbar-nav">
         <NavLink className="nav-link active fs-5 fw-bold" aria-current="page" to="/home">Home</NavLink>
         <NavLink className="nav-link fs-5 fw-bold" to="/service">Service</NavLink>
+        <NavLink className="nav-link fs-5 fw-bold" to="/covid">Covid</NavLink>
         <NavLink className="nav-link fs-5 fw-bold" to="/finddoctor">Find Doctor</NavLink>
+        
         <NavLink className="nav-link fs-5 fw-bold" to="/visitorPolicy">Visitors Policy</NavLink>
         <NavLink className="nav-link fs-5 fw-bold" to="/aboutus">About us</NavLink>
 
