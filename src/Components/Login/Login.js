@@ -5,7 +5,7 @@ import useFirebase from '../useFirebase/useFirebase';
 
 const Login = () => {
 
-    const {xyz}=useFirebase();
+    const {abc}=useFirebase();
     
     
 
@@ -18,7 +18,7 @@ const Login = () => {
             <img style={{height:"400px"}} src="" alt="" srcset="" />
         </div>
         <div className="col-md-5 roww">
-            <form >
+            <div>
             <h2>Please login </h2>
             <br/>
             
@@ -32,8 +32,8 @@ const Login = () => {
             <p>------------or------------</p>
             
            
-            </form>
-            <input onClick={xyz} className="btn w-50 bg-info rounded-3"  type="button" value="Sing In with Google" />
+            </div>
+            <input onClick={abc} className="btn w-50 bg-info rounded-3"  type="button" value="Sing In with Google" />
            
         </div>
         

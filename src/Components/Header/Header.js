@@ -1,20 +1,32 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../images/lincoln_logo.png'
 import useFirebase from '../useFirebase/useFirebase';
 import './Header.css'
 
 const Header = () => {
-  const {user}=useFirebase()
-  console.log(user);
+  const {logOut,user}=useFirebase()
+  
+  
+    
+
+  console.log(user?.email);
+
     return (
         <div className="header">
           <div className="d-flex d-flex justify-content-end">
-          <h6 className="me-3"><i class="fab fa-facebook-square text-primary fs-2 "></i><a href=""> Facbook</a></h6>
-                <h6 className="me-3"><i class="fab fa-youtube-square text-danger fs-2"></i><a href=""> YouTube</a></h6>
-                <h6 className="me-3"><i class="fab fa-instagram-square fs-2 text-info"></i><a href=""> instagram</a></h6>
+          <h6 className="me-3"><i class="fab fa-facebook-square text-primary fs-2 "></i><Link to=""> Facbook</Link></h6>
+                <h6 className="me-3"><i class="fab fa-youtube-square text-danger fs-2"></i><Link to=""> YouTube</Link></h6>
+                <h6 className="me-3"><i class="fab fa-instagram-square fs-2 text-info"></i><Link to=""> instagram</Link></h6>
                 
-                <h6 className="me-3"><i class="fab fa-snapchat fs-2 text-warning"></i><a href=""> Snapchat</a></h6>
+                <h6 className="me-3"><i class="fab fa-snapchat fs-2 text-warning"></i><Link to=""> Snapchat</Link></h6>
+                {
+                    user.email &&
+                   <aside  style={{marginLeft:"50%"}}>
+                        <img className="rounded-circle" width="46" height="46" src={user?.photoURL} alt="" />
+                    <span className="ms-2 text-primary">{user?.displayName}</span>
+                   </aside>
+                }
           </div>
            
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -32,19 +44,16 @@ const Header = () => {
         <NavLink className="nav-link fs-5 fw-bold" to="/visitorPolicy">Visitors Policy</NavLink>
         <NavLink className="nav-link fs-5 fw-bold" to="/aboutus">About us</NavLink>
 
-        {
-        !user.email
-        ?
-        (
-        <>
+       
 
-        <NavLink className="nav-link fs-5 fw-bold" to="/login">Login</NavLink>
+        {! user?.email ?
+       <>
+          <NavLink className="nav-link fs-5 fw-bold" to="/login">Login</NavLink>
 
-        <NavLink className="nav-link fs-5 fw-bold" to="/singup">Sing-Up</NavLink>
-
-        </>
-        )
-        : (<button>Singout</button>)}
+<NavLink className="nav-link fs-5 fw-bold" to="/singup">Sing-Up</NavLink>
+       </>
+        :<button onClick={logOut} > Sign Out</button>
+        }
       </div>
     </div>
   </div>

@@ -1,13 +1,11 @@
-import { useState } from "react"
-import { GoogleAuthProvider,getAuth,signInWithPopup, GithubAuthProvider} from "firebase/auth";
+import { useEffect, useState } from "react"
+import { GoogleAuthProvider,getAuth,signInWithPopup, GithubAuthProvider,signOut,onAuthStateChanged} from "firebase/auth";
 import initializeAuthentication from "../Firebase/Firebase.init";
 initializeAuthentication()
 
 const useFirebase =()=>{
 
     const [user,setUser]= useState({});
-   
-
     const auth=getAuth()
 
     const provider = new GoogleAuthProvider();
@@ -24,7 +22,7 @@ const useFirebase =()=>{
 
     signInWithPopup(auth,provider)
     .then(result =>{
-       
+       console.log(result.user);
         setUser(result.user);
     })
     .catch(error =>{
@@ -33,32 +31,34 @@ const useFirebase =()=>{
     
    };
    
-//    const logOut = () => {
-//     signOut(auth)
-//         .then(() => {
-//             setUser({})
-//         })
-// }
+   const logOut = () => {
+    signOut(auth)
+        .then(() => {
+            setUser({})
+        })
+}
 
-//    useEffect(()=>{
-//     onAuthStateChanged(auth, (user) => {
-//         if (user) {
-//             // console.log('hiiiiii',user);
-//             setUser(user)
+   useEffect(()=>{
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            // console.log('hiiiiii',user);
+            setUser(user)
 
-//         }
+        }
 
-//    })
+   })
    
    
-//   });
+  });
 
    
    return{
        user,
        xyz,
        
-        abc
+        abc,
+        logOut
+
         
     }
 }

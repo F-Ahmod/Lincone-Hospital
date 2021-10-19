@@ -14,6 +14,8 @@ import Login from './Components/Login/Login';
 import SingUp from './Components/SingUp/Singup';
 import AboutUs from './Components/AboutUs/AboutUs';
 import PrivetRoute from './Components/PrivetRoute/PrivetRoute';
+import SeeDetails from './Components/SeeDetails/SeeDetails';
+import DoctorDetails from './Components/DoctorDetails/DoctorDetails';
 
 
 function App() {
@@ -39,6 +41,12 @@ function App() {
       </Route>
       <Route  path="/service">
         <Service></Service>
+      </Route>
+      <Route path="/seedetails/:serviceid">
+        <SeeDetails></SeeDetails>
+      </Route>
+      <Route path="/doctordetails/:doctorid">
+        <DoctorDetails></DoctorDetails>
       </Route>
 
       <Route  path="/finddoctor">
