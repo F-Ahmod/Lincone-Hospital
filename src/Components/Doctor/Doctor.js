@@ -14,17 +14,17 @@ const Doctor = ({doctor}) => {
     }
     return (
         
-            <div  class="card mb-3 ms-5 border-0" >
+ <div id="services"  class="service card mb-3 mx-auto border-0" >
   <div class="row g-5 ">
-    <div class="col-md-4 ">
-      <img src={img} class="img-fluid rounded-start" style={{height:"159px"}} alt="..."/>
+    <div class="service-img col-md-4 ">
+    <img  className="rounded-circle photo " style={{height:"180px",width:"180px"}} src={img} alt="" />
     </div>
     <div class="col-md-8">
       <div class="card-body">
         <h5 class="card-title">{name}</h5>
         <p class="card-text">{specialty}</p>
         <p class="card-text">{education}</p>
-        <button id="Seedoctor" onClick={()=> handelSeeDetails(`doctordetails/${id}`)} type="button" Classname="btn btn-secondary " style={{marginLeft:"90px",marginBottom:"15px"}}>Doctor</button>
+        <button id="Seedoctor" onClick={()=> handelSeeDetails(`doctordetails/${id}`)} type="button" Classname="btn btn-secondary " style={{marginLeft:"50px",marginBottom:"15px"}}>See Doctor Details</button>
       </div>
     </div>
   </div>

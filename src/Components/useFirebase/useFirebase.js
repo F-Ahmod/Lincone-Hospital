@@ -11,14 +11,14 @@ const useFirebase =()=>{
     const provider = new GoogleAuthProvider();
     const gitProvider = new GithubAuthProvider();
 
-    const xyz =()=>{
+    const singinWithGitHub =()=>{
         signInWithPopup(auth,gitProvider)
         .then(result=>{
             setUser(result.user)
         })
     }
 
-    const abc = () =>{
+    const singinWithGoogle = () =>{
 
     signInWithPopup(auth,provider)
     .then(result =>{
@@ -41,7 +41,7 @@ const useFirebase =()=>{
    useEffect(()=>{
     onAuthStateChanged(auth, (user) => {
         if (user) {
-            // console.log('hiiiiii',user);
+           
             setUser(user)
 
         }
@@ -54,9 +54,8 @@ const useFirebase =()=>{
    
    return{
        user,
-       xyz,
-       
-        abc,
+        singinWithGitHub,
+        singinWithGoogle,
         logOut
 
         

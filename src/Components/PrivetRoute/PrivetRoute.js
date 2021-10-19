@@ -8,12 +8,11 @@ const PrivetRoute = ({children,...rest}) => {
     return (
         <Route
         {...rest}
-        render={({location}) => user.email ?
-    children :
+        render={({location}) => user.displayName ? children :
    <Redirect
-   to={{
-    pathname: '/login',
-    state:{from:location}
+       to={{
+      pathname: '/login',
+      state:{from:location}
    }}
    ></Redirect>
    }

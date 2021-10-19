@@ -24,7 +24,7 @@ const SeeDetails = () => {
     return (
 
 <div className="card mx-auto my-5" style={{width:"400px"}}>
-  <img src={serviceDetails?.img} class="card-img-top" alt="..."/>
+  <img src={serviceDetails?.img} width="400px" class="mx-auto" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">{serviceDetails?.titel}</h5>
     <p className="card-text">{serviceDetails?.dse}</p>

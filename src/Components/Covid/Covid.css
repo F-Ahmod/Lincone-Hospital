@@ -1,0 +1,6 @@
+.covid{
+    background-color: rgb(174, 226, 174);
+}
+.covid:hover{
+    box-shadow: lightpink;
+}

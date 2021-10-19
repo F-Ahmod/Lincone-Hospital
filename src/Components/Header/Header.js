@@ -1,15 +1,11 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import {Link, NavLink } from 'react-router-dom';
 import logo from '../images/lincoln_logo.png'
 import useFirebase from '../useFirebase/useFirebase';
 import './Header.css'
 
 const Header = () => {
   const {logOut,user}=useFirebase()
-  
-  
-    
-
   console.log(user?.email);
 
     return (
@@ -23,7 +19,7 @@ const Header = () => {
                 {
                     user.email &&
                    <aside  style={{marginLeft:"50%"}}>
-                        <img className="rounded-circle" width="46" height="46" src={user?.photoURL} alt="" />
+                        <img className="rounded-circle" width="47" height="46" src={user?.photoURL} alt="" />
                     <span className="ms-2 text-primary">{user?.displayName}</span>
                    </aside>
                 }
@@ -32,7 +28,6 @@ const Header = () => {
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">
       <img className="me-3" src={logo} alt="" srcSet="" />
-    {/* <NavLink className="navbar-brand fs-2" to="#">Navbar</NavLink> */}
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -46,13 +41,13 @@ const Header = () => {
 
        
 
-        {! user?.email ?
+        {!user?.email ?
        <>
           <NavLink className="nav-link fs-5 fw-bold" to="/login">Login</NavLink>
 
-<NavLink className="nav-link fs-5 fw-bold" to="/singup">Sing-Up</NavLink>
+       <NavLink className="nav-link fs-5 fw-bold" to="/singup">Sing-Up</NavLink>
        </>
-        :<button onClick={logOut} > Sign Out</button>
+        :<button className="bg-secondary rounded-pill text-light" onClick={logOut} > Sign Out</button>
         }
       </div>
     </div>

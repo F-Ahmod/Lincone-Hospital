@@ -13,7 +13,7 @@ const Services = ({service}) => {
     }
 
     return (
-        <div  className="services mb-5 rounded ">
+        <div  className="services mb-5 mx-auto rounded ">
             <div className="service-img " >
             <img  className="rounded-circle photo " style={{height:"280px",width:"280px"}} src={img} alt="" />
             </div>

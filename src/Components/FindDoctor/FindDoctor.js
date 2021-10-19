@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Doctor from '../Doctor/Doctor';
+import './FindDoctor.css'
 
 
 const FindDoctor = () => {
@@ -14,7 +15,7 @@ const FindDoctor = () => {
         <div>
             <h2 className="text-center fw-blod">Find A Doctor</h2>
             <hr />
-            <div className="container">
+            <div className="container ">
          
                 {
                     findDoctor.map(doctor => <Doctor

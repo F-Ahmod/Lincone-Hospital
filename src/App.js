@@ -16,12 +16,15 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import PrivetRoute from './Components/PrivetRoute/PrivetRoute';
 import SeeDetails from './Components/SeeDetails/SeeDetails';
 import DoctorDetails from './Components/DoctorDetails/DoctorDetails';
+import NotFound from './Components/NotFound/NotFound';
+import Covid from './Components/Covid/Covid';
+
 
 
 function App() {
   return (
     
-      <BrowserRouter>
+<BrowserRouter>
     <Header></Header>
     <HedBanner></HedBanner>
     <Switch>
@@ -35,7 +38,9 @@ function App() {
       <Route exact path="/home">
       <Service></Service>
       <FindDoctor></FindDoctor>
+      <Covid></Covid>
       <AboutUs></AboutUs>
+      
         <Home></Home>
 
       </Route>
@@ -66,10 +71,15 @@ function App() {
       <Route  path="/singup">
        <SingUp></SingUp>
       </Route>
+      <Route path="*">
+      <NotFound></NotFound>
+      </Route>
 
     </Switch>
     <Footer></Footer>
     </BrowserRouter>
+    
+      
    
   );
 }

@@ -1,7 +1,38 @@
 #Seedoctor{
     border: none;
-    padding: 5px 20px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.849);
+    border-radius: 40px;
+}
+#services{
+    background-color:whitesmoke;
+   
+    
 }
 #doctors{
     border: none;
 }
+#services:hover{
+    box-shadow: 0 .5rem 1rem rgb(190, 189, 189);
+    border-radius: 10px;
+    transition: 0.2s;
+    }
+    
+
+     
+    .service-img{
+        overflow: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    
+    
+    
+        
+    
+    
+       
