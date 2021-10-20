@@ -19,6 +19,7 @@ import DoctorDetails from './Components/DoctorDetails/DoctorDetails';
 import NotFound from './Components/NotFound/NotFound';
 import Covid from './Components/Covid/Covid';
 import AuthProvider from './Components/ContextApi/AuthProvider';
+import Pragnancy from './Components/Pragnancy/Pragnancy';
 
 
 
@@ -33,18 +34,15 @@ function App() {
       <Route exact path="/">
       <Service></Service>
       <FindDoctor></FindDoctor>
-      
         <Home></Home>
-
       </Route>
       <Route exact path="/home">
       <Service></Service>
       <FindDoctor></FindDoctor>
       <Covid></Covid>
       <AboutUs></AboutUs>
-      
-        <Home></Home>
-
+      <Pragnancy></Pragnancy>
+      <Home></Home>
       </Route>
       <Route  path="/service">
         <Service></Service>
@@ -58,6 +56,9 @@ function App() {
 
       <Route  path="/covid">
       <Covid></Covid>
+      </Route>
+      <Route  path="/pragnancy">
+      <Pragnancy></Pragnancy>
       </Route>
       <Route  path="/finddoctor">
        <FindDoctor></FindDoctor>

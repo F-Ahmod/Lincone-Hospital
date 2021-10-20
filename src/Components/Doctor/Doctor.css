@@ -11,7 +11,7 @@
     color: white;
    padding: 40px;
    
-   box-shadow: 0 .5rem 1rem rgb(190, 189, 189);
+   box-shadow: 0 .1rem .1rem .1rem rgb(190, 189, 189);
     border-radius: 20px;
     transition: 0.2s;
    
@@ -21,7 +21,7 @@
     border: none;
 }
 #services:hover{
-    box-shadow: 0 .5rem 1rem rgb(190, 189, 189);
+    box-shadow: 0 .2rem 1rem rgb(190, 189, 189);
     border-radius: 10px;
     transition: 0.2s;
     }

@@ -27,9 +27,9 @@ const DoctorDetails = () => {
 
     return (
 
-<div className="text-center">
-<div className="card  my-5" >
-  <img src={serviceDetails?.img} class="mx-auto" alt="..."/>
+<div  className="text-center mt-5">
+<div  className="card  my-5 " >
+  <img id="seedoctor" src={serviceDetails?.img} class="mx-auto " alt="..."/>
   <div className="card-body">
   <h3 className="card-text">{serviceDetails?.name}</h3>
     <h5 className="card-title">{serviceDetails?.specialty}</h5>

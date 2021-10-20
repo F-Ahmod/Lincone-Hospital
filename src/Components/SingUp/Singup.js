@@ -1,17 +1,18 @@
 import { getAuth,createUserWithEmailAndPassword} from "firebase/auth";
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import useFirebase from "../useFirebase/useFirebase";
+
 import './SingUp.css'
 import google from '../images/g.png'
 import git from '../images/go.jpg'
+import useAuth from "../useAuth/useAuth";
 
 const Singup = () => {
  
     const [email,setEmail]=useState('');
     const [password,setPassword]=useState('');
     const auth=getAuth()
-    const {singinWithGitHub,singinWithGoogle}=useFirebase();
+    const {singinWithGitHub,singinWithGoogle}=useAuth();
 
     const hendalEmail=e=>{
         setEmail( e.target.value);
@@ -38,6 +39,7 @@ const Singup = () => {
        
 
     return (
+        
         <div className="singUp ">
             <div id="singUpcontainer" className="singup-form d-flex justify-content-center ">
         <form className="sinup1"  >         
@@ -50,7 +52,7 @@ const Singup = () => {
             <button id="button" className="bg-info text-center" onClick={hendalSingUp}>Sing Up</button>
             <br /><br />
             
-             <Link className="" to="/login">If you already Sing-Up</Link>
+             <Link className=" text-dark fw-bold" to="/login">If you already Sing-Up Please Login with google & Github in bellow button.</Link>
              <br /> <br />
 
              <div className="text-center">

@@ -15,6 +15,7 @@ const Login = () => {
              <h2>Please Sing In</h2>
              
              <br /> <br />
+             
             <div className="text-center">
             <button className="mx-auto btn" onClick={singinWithGoogle}><img style={{height:"60px",width:"60px"}} src={google} alt="" srcset="" /></button>
             <button onClick={singinWithGitHub}><img style={{height:"60px",width:"60px"}} src={git} alt="" srcset="" /></button>

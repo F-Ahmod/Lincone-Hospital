@@ -15,7 +15,7 @@ const FindDoctor = () => {
         <div>
             <h2 className="text-center fw-blod text-light ">Find A Doctor</h2>
             <hr />
-            <div className="container ">
+            <div className="container-doctor-find ">
          
                 {
                     findDoctor.map(doctor => <Doctor

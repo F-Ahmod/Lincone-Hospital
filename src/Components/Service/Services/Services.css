@@ -8,14 +8,14 @@
     color: white;
     border-radius: 2px;
     width: 300px;
-    box-shadow: 0 .5rem 1rem rgb(190, 189, 189);
+    box-shadow: 0 .3rem .1rem rgb(190, 189, 189);
     border-radius: 10px;
     transition: 0.2s;
     padding-bottom: 15px;
 }
 
 .services:hover{
-    box-shadow: 0 .5rem 2rem rgb(190, 189, 189);
+    box-shadow: 0 .2rem .1rem .5rem rgb(190, 189, 189);
     border-radius: 20px;
     transition: 0.2s;
     }

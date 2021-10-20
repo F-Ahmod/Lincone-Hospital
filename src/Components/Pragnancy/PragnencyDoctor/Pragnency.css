@@ -1,0 +1,28 @@
+
+    .caerti{
+        box-shadow: 0.2rem 5rem 2rem  rgb(190, 189, 189);
+        border-radius: 20px;
+        transition: 0.2s;
+        border-radius: 20px;
+    }
+    
+    
+
+    .caerti{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 15px !important;
+        border-radius: 30px;
+        
+    }
+
+    @media only screen and (max-width:688px) {
+        .caerti{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    @media only screen and (min-width:689px) and (max-width: 991px){
+        .caerti{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }

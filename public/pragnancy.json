@@ -1,0 +1,60 @@
+[
+
+    {
+        "id": "1",
+        "img": "https://i.ibb.co/YphFr6d/3-1.jpg",
+        "specialty": "Check out Early Pregnancy Advice. Save Time, and Find it Here. Web, Images & Video. Information 24/7. Wiki, News & More.",
+        "price":"400",
+        "name":"Genaral pragnancy test"
+        
+      },
+    {
+        "id": "2",
+        "img": "https://i.ibb.co/HDm14Qk/9.jpg",
+        "specialty": "Are you looking for Unplanned Pregnancy Help? Learn more about Caris Pregnancy Center. Caris is helping women and children thrive during ",
+        "price":"360",
+
+        "name":"Weekly chackup"
+        
+      },
+    {
+        "id": "3",
+        "img": "https://i.ibb.co/BVfF4pZ/6-1.jpg",
+        "specialty": "A pregnancy test can tell whether you are pregnant by checking for a particular hormone in your urine or blood.",
+        "price":"200",
+
+        "name":"HCG test"
+        
+      },
+    {
+        "id": "4",
+        "img": "data:image/jpeg;base64,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",
+        "specialty": "How pregnancy tests work · collect your urine in a cup and dip a testing stick into the liquid · collect your urine in a cup and use an eyedropper to move a small",
+        "price":"600",
+
+        "name":"Emergency care"
+        
+      },
+    {
+        "id": "5",
+        "img": "https://image.freepik.com/free-photo/front-view-happy-smiled-single-mother-with-baby-twins-girls-dressed-white-dresses-home_8353-11709.jpg",
+        "specialty": "Learn about healthy eating and physical activity during pregnancy to gain the ... start on life and be a healthy example to your family for a lifetime.",
+        "price":"499",
+
+        "name":"we Care Your Baby"
+        
+      },
+    
+    {
+        "id": "6",
+        "img": "https://i.ibb.co/MV698v7/2.jpg",
+        "specialty": "Family planning helps save women's and children's lives, reduces the health risks of pregnancy and childbirth, and gives women more time care for themselves ",
+        "price":"1499",
+
+        "name":"Delivery Support A to z"
+        
+      }
+    
+    
+    
+]
