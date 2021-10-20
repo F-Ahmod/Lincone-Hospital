@@ -6,7 +6,8 @@ import PragnencyDoctor from './PragnencyDoctor/PragnencyDoctor';
 import img from '../images/sar1.jpg'
 import img1 from '../images/sar1.jpg'
 import img2 from '../images/sar1.jpg'
-import { Carousel } from 'bootstrap';
+
+import { Carousel, CarouselItem } from 'react-bootstrap';
 
 const Pragnancy = () => {
     const [pragnancy, setPragnancy] = useState([])
@@ -29,7 +30,7 @@ const Pragnancy = () => {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h2 className="text-secondary">Patiant Careing</h2>
+      
      
     </Carousel.Caption>
   </Carousel.Item>
@@ -42,7 +43,7 @@ const Pragnancy = () => {
     />
 
     <Carousel.Caption>
-      <h2 className="text-secondary">Doctor with lovely patiant</h2>
+     
      
     </Carousel.Caption>
   </Carousel.Item>
@@ -55,7 +56,7 @@ const Pragnancy = () => {
     />
 
     <Carousel.Caption>
-      <h2 className="text-secondary" >Family Planing</h2>
+     
      
     </Carousel.Caption>
   </Carousel.Item>
@@ -64,15 +65,16 @@ const Pragnancy = () => {
 
           </div>
           <div className="col-md-4 ">
-            <h2 className="text-light p-2">Aims & Objectives</h2>
+            <h2 className="text-light p-2">We allows with You</h2>
             <p className="text-light p-2">
-              <li>To promote awareness of health care among all sections of the Indian people.</li>
-              <li>To promote awareness among functionaries involved in Health and Hospital Management.</li>
-              <li>To promote research in the field of Health and Hospital Management.</li>
+            <li>To publish text books and periodic monographs on current and futuristic trends in health and hospital management.</li>
+              <li>i can promote awareness of health care among all sections of the Indian people.</li>
+              <li>promote awareness among functionaries involved in Health and Hospital Management.</li>
+              <li>this is a promote research in the field of Health and Hospital Management.</li>
               <li>To promote the development of high quality hospital services and community health care.</li>
               <li>o provide opportunities for training and research in all aspects of Hospital Services Health Care Delivery System and Health Care Administration.</li>
-              <li>To publish text books and periodic monographs on current and futuristic trends in health and hospital management.</li>
-              <li>To publish text books and periodic monographs on current and futuristic trends in health and hospital management.</li>
+              <li>you publish text books and periodic monographs on current and futuristic trends in health and hospital management.</li>
+              
             </p>
           </div>
         </div>
