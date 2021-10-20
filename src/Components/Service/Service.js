@@ -11,7 +11,7 @@ const Service = () => {
     }, [])
     return (
         <div>
-            <h2 className="text-center fw-blod">Our Services</h2>
+            <h2 className="text-center fw-blod bg-secondary bg-gradient">Our Services</h2>
             <hr />
             <div className="container ">
             {/* d-flex flex-wrap */}

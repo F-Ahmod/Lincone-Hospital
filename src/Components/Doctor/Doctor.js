@@ -14,7 +14,7 @@ const Doctor = ({doctor}) => {
     }
     return (
         
- <div id="services"  class="service card mb-3 mx-auto border-0" >
+ <div id="services"  class="service card mb-5 me-3 mx-auto border-0" >
   <div class="row g-5 ">
     <div class="service-img col-md-4 ">
     <img  className="rounded-circle photo " style={{height:"180px",width:"180px"}} src={img} alt="" />

@@ -9,21 +9,32 @@ const Header = () => {
   console.log(user?.email);
 
     return (
-        <div className="header">
-          <div className="d-flex d-flex justify-content-end">
-          <h6 className="me-3"><i class="fab fa-facebook-square text-primary fs-2 "></i><Link to=""> Facbook</Link></h6>
-                <h6 className="me-3"><i class="fab fa-youtube-square text-danger fs-2"></i><Link to=""> YouTube</Link></h6>
-                <h6 className="me-3"><i class="fab fa-instagram-square fs-2 text-info"></i><Link to=""> instagram</Link></h6>
+        <div >
+          <div className="header row d-flex align-items-center ">
+             <div className="d-flex col-md-8 ">
+              <h6 className="me-3"><i class="fab fa-facebook-square text-primary  "></i><Link to=""> Facbook</Link></h6>
+                <h6 className="me-3"><i class="fab fa-youtube-square text-danger "></i><Link to=""> YouTube</Link></h6>
+                <h6 className="me-3"><i class="fab fa-instagram-square  text-info"></i><Link to=""> instagram</Link></h6>
                 
-                <h6 className="me-3"><i class="fab fa-snapchat fs-2 text-warning"></i><Link to=""> Snapchat</Link></h6>
-                {
-                    user.email &&
+                <h6 className="me-3"><i class="fab fa-snapchat  text-warning"></i><Link to=""> Snapchat</Link></h6>
+                
+                
+          </div>
+          <div className="cal-md-4 text-end ">{         
+                   user.email &&
                    <aside  style={{marginLeft:"50%"}}>
-                        <img className="rounded-circle" width="47" height="46" src={user?.photoURL} alt="" />
                     <span className="ms-2 text-primary">{user?.displayName}</span>
+                    <img className="rounded-circle" width="30" height="30" src={user?.photoURL} alt="" />
+                    
                    </aside>
                 }
-          </div>
+            </div>
+          
+          
+        </div>
+          
+          
+          
            
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">

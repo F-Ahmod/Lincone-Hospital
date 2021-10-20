@@ -20,7 +20,7 @@ const Services = ({service}) => {
             <h5 className="p-5">{titel}</h5>
             <p className="p-2">Description :{dse.slice(0, 90)}</p>
             
-            <button onClick={()=> handelSeeDetails(`seedetails/${id}`)} type="button" class="btn btn-secondary " style={{marginLeft:"90px",marginBottom:"15px"}}>See Details</button>
+            <button onClick={()=> handelSeeDetails(`seedetails/${id}`)} type="button" class="btn btn-secondary details" >See Details</button>
         </div>
     );
 };

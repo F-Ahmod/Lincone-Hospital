@@ -3,13 +3,20 @@
 }
 .services{ 
     overflow: hidden;
-    background-color:whitesmoke;
+    /* background-color:whitesmoke; */
+    background-color: black;
+    color: white;
     border-radius: 2px;
     width: 300px;
-}
-.services:hover{
     box-shadow: 0 .5rem 1rem rgb(190, 189, 189);
     border-radius: 10px;
+    transition: 0.2s;
+    padding-bottom: 15px;
+}
+
+.services:hover{
+    box-shadow: 0 .5rem 2rem rgb(190, 189, 189);
+    border-radius: 20px;
     transition: 0.2s;
     }
     .services:hover .photo{
@@ -19,7 +26,14 @@
     .service-img{
         overflow: hidden;
     }
+.details{
+    box-shadow: 0 .5rem 2rem rgb(190, 189, 189);
+    border-radius: 20px;
+    transition: 0.2s;
+    margin-left: 90px;
+   
 
+}
 
     
 

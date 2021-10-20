@@ -18,12 +18,14 @@ import SeeDetails from './Components/SeeDetails/SeeDetails';
 import DoctorDetails from './Components/DoctorDetails/DoctorDetails';
 import NotFound from './Components/NotFound/NotFound';
 import Covid from './Components/Covid/Covid';
+import AuthProvider from './Components/ContextApi/AuthProvider';
 
 
 
 function App() {
   return (
     
+<AuthProvider>
 <BrowserRouter>
     <Header></Header>
     <HedBanner></HedBanner>
@@ -81,6 +83,7 @@ function App() {
     </Switch>
     <Footer></Footer>
     </BrowserRouter>
+</AuthProvider>
     
       
    

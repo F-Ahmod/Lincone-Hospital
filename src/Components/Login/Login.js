@@ -3,9 +3,9 @@ import './Login.css'
 import google from '../images/go.jpg'
 import git from '../images/g.png'
 import { Link } from 'react-router-dom';
-import useFirebase from '../useFirebase/useFirebase';
+import useAuth from '../useAuth/useAuth';
 const Login = () => {
-    const {singinWithGitHub,singinWithGoogle}=useFirebase();
+    const {singinWithGitHub,singinWithGoogle}=useAuth();
     
     return (
 

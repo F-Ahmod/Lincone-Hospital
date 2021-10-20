@@ -13,7 +13,7 @@ const FindDoctor = () => {
     return (
         
         <div>
-            <h2 className="text-center fw-blod">Find A Doctor</h2>
+            <h2 className="text-center fw-blod text-light ">Find A Doctor</h2>
             <hr />
             <div className="container ">
          

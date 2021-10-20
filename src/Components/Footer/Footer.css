@@ -1,8 +1,11 @@
 #foot{
-    background-color: hsl(0, 0%, 96%);
-    color: black;
+    /* background-color: hsl(0, 0%, 96%); */
+    background-color: rgb(17, 16, 16);
+    color: white;
 }
 .footer2{
-    background-color: lightslategrey;
+    /* background-color: lightslategrey;
+    color: white; */
+    background-color:rgb(14, 10, 10);
     color: white;
 }
